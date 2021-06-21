@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_195011) do
+ActiveRecord::Schema.define(version: 2021_06_21_162459) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.string "image"
     t.text "description"
-    t.string "amazon_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "book_image"
+    t.string "amazon_product_url"
   end
 
   create_table "user_books", force: :cascade do |t|
