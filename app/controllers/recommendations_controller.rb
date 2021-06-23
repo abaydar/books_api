@@ -46,6 +46,6 @@ class RecommendationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def recommendation_params
-      params.require(:recommendation).permit(:title, :author)
+      params.require(:recommendation).permit(:title, :author, :book_id)
     end
 end
