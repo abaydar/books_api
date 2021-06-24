@@ -24,3 +24,6 @@ ENV["API_SECRET"]
 # science_books.each do |b|
 #     Book.create(title: b["title"], author: b["author"], description: b["description"], book_image: b["book_image"], amazon_product_url: b["amazon_product_url"], likes: 0)
 # end
+
+# Recommendation.create(title: "Find You First", author: "Linwood Barclay", book_id: 1)
+# Recommendation.create(title: "The Great Alone", author: "Kristin Hannah", book_id: 13)
